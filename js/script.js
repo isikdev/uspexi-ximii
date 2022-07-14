@@ -5,9 +5,8 @@ $('.news__slider').slick({
 });
 $(document).ready(function() {
     $('.info__card-head').on('click', f_acc);
-  });
-  
+  });  
   function f_acc(){
     $('.info__card-body').not($(this).next()).slideUp(100);
       $(this).next().slideToggle(100);
-  }
+}
