@@ -12,6 +12,7 @@
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  position: relative;
 }
 
 html {
@@ -98,6 +99,7 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 50px;
+  position: relative;
 }
 
 .info__wrapper .article__block {
@@ -145,6 +147,40 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.info__wrapper .info__block .upward {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  z-index: 10000;
+  background-color: #fff;
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.info__wrapper .info__block .upward img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 17px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .info__wrapper .info__block .info__navbar {
@@ -233,12 +269,11 @@ button:hover {
   margin: 20px 0px;
 }
 
-.info__wrapper .info__block .info__card .info__card-head a {
+.info__wrapper .info__block .info__card .info__card-head #toggleBtn {
   font-size: 14px;
   color: #888888;
   text-decoration: none;
-  position: absolute;
-  right: 10px;
+  border: 0px none;
 }
 
 .info__wrapper .info__block .info__card .info__card-body ul li {
@@ -266,6 +301,78 @@ button:hover {
 }
 
 .info__wrapper .info__block .info__card .info__card-body p {
+  margin: 17px 0px;
+}
+
+.info__wrapper .info__block .first__card-block {
+  padding: 10px 35px;
+  background-color: #fff;
+  max-width: 520px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-head button {
+  color: #000;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-head #toggleBtn {
+  font-size: 14px;
+  color: #888888;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-head h1 {
+  margin: 20px 0px;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-body ul li {
+  color: red;
+  list-style: none;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-body ul li::before {
+  content: "\2022";
+  color: red;
+  background: red;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  display: inline-block;
+  line-height: 0.3rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-body ul li a {
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+}
+
+.info__wrapper .info__block .first__card-block .info__card-body p {
   margin: 17px 0px;
 }
 
